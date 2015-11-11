@@ -3,7 +3,7 @@ def caesar_cipher(string, shift_factor)
   string.each_char do |letter|
     /[a-zA-Z]/ === letter ? cipher += shift_letter(letter, shift_factor) : cipher += letter
   end
-  puts cipher
+  return cipher
 end
 
 def shift_letter(letter, shift_factor)
